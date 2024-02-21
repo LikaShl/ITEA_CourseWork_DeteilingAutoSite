@@ -3,28 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+<link rel="stylesheet" href="style.css">
     <title>Auto detailing</title>
 </head>
 <body>
+    <div class="bg ell1"></div>
+    <div class="bg ell2"></div>
+    <div class="bg ell3"></div>
+    <div class="bg ell4"></div>
     <div class="container">
-        <header>
-            <div class="logo"></div>
-            <nav></nav>
+        <header class="row">
+            <div class="logo col">
+                <span class="circles">                
+                    <span class="circle yellow"> </span>
+                    <span class="circle gold upperElement"> </span>
+                </span>
+                <span  class="detailingcompany">detailingcompany</span>
+            </div>
+            <nav class="col">
+                <ul>
+                <li><a href="#">home.</a></li>
+                <li><a href="#">about us.</a></li>
+                <li><a href="#">services.</a></li>
+                <li><button class="contactBtn goldLinear"><a class="contactLink" href="#">contact us</a></button></a></li>
+            </ul>
+            </nav>
         </header>
         <main>
-            <section class="hero"></section>
-            <section class="sevises"></section>
-            <section class="testimonials"></section>
-            <section class="about"></section>
-            <section class="contact"></section>
+            <section class="hero row">
+                <div class="titleBlock col">
+                <h1>Detailing your car has never <span class="white">been</span> eiser.</h1>
+                <h3>we providing high-quality <br> detailing services</h3>
+                <button class="goldLinear">Our services</button>
+                <button class="negative">Contact us</button>
+            </div>
+            <div class="imageBlocks col row align-items-center">
+                <div class="imageBlock1 col-5"><img src="./img/car-wash-detailing-station (3) 1.png" alt="deteilingauto"></div>
+                <div class="imageBlock2 col-7"><img class="imgTop" src="./img/car-wash-detailing-station (3) 1 (1).png" alt="deteilingauto">
+                <img class="imgBottom" src="./img/car-wash-detailing-station (3) 1 (2).png" alt="deteilingauto">
+            </div>
+            </div>
+            </section>
+            <section class="services">
+                <h2>our services</h2>
+                <div class="row">
+                    <div class="servicesList col-8">
+                        <div class="row">
+                        <ul class="col-6 pe-0">  
+                <li class="diamond border-bottom"><h4>paint correction</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p></li>
+                <li class="diamond pt-3"><h4>full detail</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p></li>
+                        </ul>
+                        <ul class="col-6 ps-0">
+                <li class="component border-bottom"><h4>ceramic coating</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p></li>
+                <li  class="component pt-3"><h4>interior detailing</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="rightBlock col-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <button>Get in touch <img class="ps-1" src="./img/arrowright3.png" alt="arrowright"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials">
+                <h2>testimonials</h2>
+                <div class="row">
+                    <article class="testimonial col">
+                        <div class="user">
+                            <img src="./img/profile2user.png" alt="user">
+                            <h5>John Doe</h5>
+                        </div>
+                        <div class="text">
+                            <div class="triangleBlack"></div>
+                            <p>“I cannot praise Mat highly enough for his hard work, passion and enthusiasm in the way he dealt with my car.“</p>
+                        </div>
+                    </article>
+                    <article class="testimonial goldBg col">
+                        <div class="user">
+                            <img src="./img/profile2user.png" alt="user">
+                            <h5>Mattew Age</h5>
+                        </div><div class="text">
+                            <div class="triangleGold"></div>
+                                <p>“I cannot praise Mat highly enough for his hard work, passion and enthusiasm in the way he dealt with my car.“</p>
+                            </div>
+                        </article>
+                    <article class="testimonial col">
+                        <div class="user">
+                            <img src="./img/profile2user.png" alt="user">
+                            <h5>John Second</h5>
+                        </div>
+                        <div class="text">
+                            <div class="triangleBlack"></div>
+                            <p>“I cannot praise Mat highly enough for his hard work, passion and enthusiasm in the way he dealt with my car.“</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="about">
+                <h2>about us</h2>
+                <div class="row">
+                <img class="col-4" src="./img/Icon.png" alt="people">
+                <p  class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            </section>
+            <section class="contact">
+                <h2>get in touch</h2>
+                <div class="row mt-5 mx-4">
+                <form action="" class="col-7 ml-5">
+                    <input type="name" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone number">
+                    <textarea name="" placeholder="Your message" cols="30" rows="3"></textarea>
+                    <button class="formButton">Send message <img class="ps-1" src="./img/arrowright3.png" alt="arrowright"></button> 
+                </form>
+                <div class="contactBlock col-5">
+                    <div><img src="./img/Email.png" alt="email-icon"><p>example@yourmail.com</p></div>
+                    <div class="my-3"><img src="./img/Call Us.png" alt="phone-icon"><p>00553798184</p></div>
+                    <div class="d-flex align-items-center"><img src="./img/Adress.png" alt="adress-icon"><p>531 Runte Trail, Apt. 712, 95223, Durganburgh, Colorado, United States</p></div>
+                </div>
+            </div>
+            </section>
         </main>
-        <footer>
-            <div class="logo"></div>
-            <nav></nav>
-            <div class="account"></div>
-            <div class="follow"></div>
-            <div class="madeBy"></div>
+        <footer class="row">
+            <div class="logo col-4">
+                <span class="circles">                
+                    <span class="circle yellow"> </span>
+                    <span class="circle gold upperElement"> </span>
+                </span>
+                <span  class="detailingcompany">detailingcompany</span>
+            </div>
+            <div class="col d-flex justify-content-around mx-5">
+            <nav>
+                <h5>menu.</h5>
+                <ul>
+                <li>your account.</li>
+                <li>about us.</li>
+                <li>our services.</li>
+                <li>contact us</li>
+            </ul>
+            </nav>
+            <div class="account">
+                <h5>account</h5>
+                <ul>
+                    <li>log in.</li>
+                    <li>your account.</li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h5>follow us</h5>
+                <ul class="row">
+                <li class="col"><a href="https://www.facebook.com"><img src="./img/Logo Facebook.png" alt="facebook logo"></a></li>
+                <li class="col"><a href="https://www.Instagram.com"><img src="./img/Logo Instagram.png" alt="instagram logo"></a></li>
+            </ul>
+            </div>
+        </div>
+            <small class="madeBy">made with <img src="./img/lovely.png" alt="hearts"> by mjdesign</small>
         </footer>
     </div>
 </body>
