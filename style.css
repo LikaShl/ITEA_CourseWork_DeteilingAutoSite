@@ -122,7 +122,7 @@ filter: blur(125px);
     }
      /* Hero */
     .hero {
-    margin: 80px 40px;
+    margin: 80px 0 80px 40px;
 
     }
     .titleBlock {
@@ -132,6 +132,9 @@ filter: blur(125px);
     font-size: 85px;
     line-height: 80px;
     color: #FFD613;
+    padding: 20px 0 0 20px;
+    background: url(./img/Dot\ Grid.png) no-repeat;
+    background-position: top -20px left -20px;
     }
     .white {
         color: #FFFFFF;
@@ -156,22 +159,61 @@ background-color: #131212;
 border: 1px solid  #FFD613;
 color: #FFFFFF;
 }
+.imageBlocks {
+    position: relative;
+    z-index: 1;
+}
+.rect1 {
+position: absolute;
+width: 144px;
+height: 125px;
+left: 90px;
+top: 30px;
+background:  url(./img/Rectangle\ 1.png);
+z-index: 0;
+}
+.rect2 {
+position: absolute;
+width: 144px;
+height: 125px;
+left: 150px;                                    
+top: 450px;
+background: url(./img/Rectangle\ 3.png);
+}
+.rect3 {
+position: absolute;
+width: 144px;
+height: 125px;
+left: 460px;
+top: -40px;
+background: url(./img/Rectangle\ 4.png);
+}
+.imgMiddle{
+    z-index: 1;
+    position: relative;
+}
 .imgTop {
     margin-bottom:10px;
+    z-index: 1;
+    position: relative;
 }
 .imgBottom {
     margin-top: 10px;
+    z-index: 1;
+    position: relative;
 }
  /* Services */
 .services {
-    margin: 80px 0 80px 40px;    
+    margin: 160px 0 80px 40px;    
 }
 h2 {
     font-size: 55px;
     line-height: 80px;
     color: #FFD613;
-    padding: 60px 40px;
-    }
+    padding: 60px 80px;
+    background: url(./img/Dot\ Grid.png) no-repeat;
+background-position: top 40px left 50px;
+}
 .services h4 {
 font-size: 35px;
 color: #FFD613;
@@ -219,7 +261,7 @@ padding: 70px 30px 60px 40px;
 }
  /* Testimonials */
 .testimonials {
-    margin: 20px;
+    margin: 20px 50px;
 }
 .testimonials .row {
     margin-top: 70px;
@@ -268,9 +310,7 @@ color: #000000;
     padding: 60px 40px 130px;
     background-color: black;
 }
-.about h2{
-    padding: 40px 60px 60px;
-}
+
 .about img {
     height: 164px;
     width: 187px;
@@ -289,7 +329,7 @@ margin-right: 0;
 }
  /* Contact */
 .contact {
-    margin: 100px 30px 200px;
+    margin: 10px 30px 200px;
 }
 input,
 textarea {
