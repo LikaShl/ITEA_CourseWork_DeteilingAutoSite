@@ -296,24 +296,26 @@ position: relative;
     border-radius: 50px;
 color: #000000;
 }
-.triangleBlack {
+.text {
+    position: relative;
+    z-index: 0;
+}
+.text::before,
+.textGold::before {
+    content: '';
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
+    z-index: 1;
+    position: absolute;
+    margin: -40px 0 0 70px;
+}
+.text::before {
     border-bottom: 50px solid #2A2424;
-    position: absolute;
-    margin: -40px 0 0 70px;
-  }
-
-.triangleGold {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
+}
+.textGold::before {
     border-bottom: 50px solid #FFD613;
-    position: absolute;
-    margin: -40px 0 0 70px;
 }
  /* About */
 .about {
