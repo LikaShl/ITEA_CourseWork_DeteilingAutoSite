@@ -138,7 +138,7 @@ header ul {
 
 /* Выпадающее содержимое (скрыто по умолчанию) */
 .dropdown-content {
-  width: 100%;
+  min-width: 350px;
   display: none;
   position: absolute;
   background-color: #131212;
